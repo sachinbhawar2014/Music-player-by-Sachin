@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin's Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd6605a554.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="header">
+            <h2>My Music Player</h2>
+    </nav>
+    <div id="theme-toggle-switch">
+        <h5>Theme : </h5>
+        <img id="theme-img" src="assets/moon.jpg" alt="">
+    </div>
+
+    <!-- main Body with 3 sections -->
+    
+    <!-- section 1 starts -->
+    <div id="player-body">
+
+        <!-- section 1 starts -->
+        <div id="sorting" class="three-equal-parts">
+
+            <div class="lable-card" >
+                <button id="sortBtn" class="Btn">Sort by Genre:</button>
+                <div id = "sort-dropdown-by-genre" class="dropdown-menu">
+                    <ul>
+                        <li id="all">All Songs</li>
+                        <li id="pop">Pop</li>
+                        <li id="rock">Rock</li>
+                        <li id="rhythm">Rhythm</li>
+                    </ul>
+                </div>
+                <h4 id="sortedbygenre"></h4>
+            </div>
+            
+
+            <div id="playlist-right" class="playlists">
+            <!-- this will get filled with js script -->
+            </div>
+        </div>
+        
+        <!-- section 1 end -->
+
+        <!-- section 2 starts -->
+        <div id="controls" class="three-equal-parts">
+            <div class="song-card">
+                <div id="image-container">
+                    <img id="song-image" src="https://lh3.googleusercontent.com/a/ACg8ocKw0qbsTXesp8lopdgc-GDs-BSCNiZ4HRocBCRA6Ry0yzZ-=s288-c-no">
+                </div>
+                <h3 id="song-title"></h3>
+                <input id="song-range" type="range" value="0">
+                <div id="control-btns">
+                    <div class ="ctrl-btns" id="backword" onclick="playPrevSong()"><i class="fa-solid fa-backward"></i></div>
+                    <div class ="ctrl-btns" id="play" onclick="playPause()"><i id="playPauseBtn" class="fa-solid fa-play"></i></div>
+                    <div class ="ctrl-btns" id="forward" onclick="playNextSong()"><i class="fa-solid fa-forward"></i></div>
+                </div>         
+                <h5 id="song-album"></h5>
+                <h5 id="song-artists"></h5> 
+                <button id="addToPlaylist" class="addtoplaylist" onclick="toggleDropDown(playlistDropdown)">Add to Playlist</button>   
+                
+            </div>
+        </div>
+        
+        <!-- section 2 end -->
+
+        <!-- section 3 starts -->
+        <div id="playlists" class="three-equal-parts">
+            <!-- <div class="lable-card">
+                <button id="selectPlaylist">Select Playlist:</button>
+                <div id = "selectPlaylist-dropdown" class="dropdown-menu">
+                    <ul id="create-playlist-ul">
+                                              
+                    </ul>
+                </div>
+                <h4 id="playlist-elected"></h4>
+            </div> -->
+            <div class="lable-card">
+                <form id="createPlaylistForm">
+                    <input type="text" id="playlistNameInput" placeholder="Enter name of playlist..">
+                    <button type="submit" class="Btn">Create Playlist</button>
+                </form>
+                <button id="deletPlaylist" class="Btn" onclick="toggleDropDown(deletePlaylistDropdown)">Dlt PL</button>
+            </div>
+            <div id="playlists-container" class="playlists">
+                <!-- <div class="lable-card" onclick="showSongsOfThisPlaylist();">
+                    <h6>playlist.name</h6>
+                  </div> -->
+                <!-- this will get filled with js script -->
+            </div>
+            <div id="playlists-container2" class="playlists">
+                
+                <!-- this will get filled with js script -->
+            </div>
+        </div>
+        <!-- section 3 end -->
+
+
+        <!-- section 4 starts -->
+        <div class="add-song-or-deleted-pl d-none" id="playlist-dropdown"></div>
+        <div class="add-song-or-deleted-pl2 d-none" id="delete-playlist-dropdown"></div>
+    </div>
+    <script src="script.js" > </script>
+</body>
+</html>
