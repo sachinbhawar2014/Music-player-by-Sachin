@@ -4,10 +4,10 @@
 }
 :root {
   --pri-color: white;
-  --text-color: black;
-  --sec-color: rgb(223, 171, 171);
-  --sec-color2: rgb(211, 197, 197);
-  --sec-color3: rgb(153, 20, 146);
+  --text-color: #271F30;
+  --sec-color: #6D9F71;
+  --sec-color2:#EDE580;
+  --sec-color3: #CB48B7;
 }
 
 body {
@@ -15,11 +15,11 @@ body {
 }
 
 body.dark-theme {
-  --pri-color: black;
-  --text-color: rgb(212, 201, 201);
-  --sec-color: rgb(31, 29, 29);
+  --pri-color: #143642;
+  --text-color: #DAD2D8;
+  --sec-color: #7B5E7B;
   --sec-color2: rgb(100, 95, 95);
-  --sec-color3: white;
+  --sec-color3: #FBF7F4;
   background-color: var(--pri-color);
   color: var(--text-color);
 }
