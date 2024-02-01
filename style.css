@@ -3,10 +3,10 @@
   padding: 0;
 }
 :root {
-  --pri-color: white;
-  --text-color: #271F30;
-  --sec-color: #6D9F71;
-  --sec-color2:#EDE580;
+  --pri-color: #CADBC0;
+  --text-color: #2F0A28;
+  --sec-color: #C94277;
+  --sec-color2:##A27E6F;
   --sec-color3: #CB48B7;
 }
 
