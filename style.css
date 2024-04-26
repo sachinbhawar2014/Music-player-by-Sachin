@@ -4,10 +4,10 @@
 }
 :root {
   --pri-color: #CADBC0;
-  --text-color: #2F0A28;
-  --sec-color: #2E86AB;
-  --sec-color2:#A27E6F;
-  --sec-color3: #CB48B7;
+    --text-color: #2F0A28;
+    --sec-color: #A663CC;
+    --sec-color2: #B298DC;
+    --sec-color3: #6F2DBD;
 }
 
 body {
