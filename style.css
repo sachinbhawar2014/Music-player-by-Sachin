@@ -15,12 +15,12 @@ body {
 }
 
 body.dark-theme {
-  --pri-color: #143642;
-  --text-color: #DAD2D8;
-  --sec-color: #7B5E7B;
-  --sec-color2: rgb(100, 95, 95);
-  --sec-color3: #FBF7F4;
-  background-color: var(--pri-color);
+      --pri-color: #143642;
+    --text-color: #DAD2D8;
+    --sec-color: #2F4858;
+    --sec-color2: #33658A;
+    --sec-color3: #FBF7F4;
+    background-color: var(--pri-color);
   color: var(--text-color);
 }
 
